@@ -321,7 +321,7 @@ export default function ChartsPage({ isDarkMode = false }: ChartsPageProps) {
               ) : (
                 <BarChart data={lastQueryChart.chartData.data}>
                   <CartesianGrid strokeDasharray="3 3" stroke={isDarkMode ? '#374151' : '#E5E7EB'} />
-                  <XAxis dataKey={Object.keys(lastQueryChart.chartData.data[0] || {}).find(k => typeof lastQueryChart.chartData.data[0][k] === 'string') || 'name'} tick={{ fontSize: 11, angle: -45, textAnchor: 'end' }} height={80} />
+                  <XAxis dataKey={Object.keys(lastQueryChart.chartData.data[0] || {}).find(k => typeof lastQueryChart.chartData.data[0][k] === 'string') || 'name'} tick={{ fontSize: 11 }} angle={-45} textAnchor="end" height={80} />
                   <YAxis tick={{ fontSize: 11 }} />
                   <Tooltip />
                   <Legend />
@@ -431,7 +431,7 @@ export default function ChartsPage({ isDarkMode = false }: ChartsPageProps) {
           <ResponsiveContainer width="100%" height={300}>
             <BarChart data={productCount}>
               <CartesianGrid strokeDasharray="3 3" stroke={isDarkMode ? '#374151' : '#E5E7EB'} />
-              <XAxis dataKey="product" tick={{ fontSize: 10, angle: -45, textAnchor: 'end' }} height={80} />
+              <XAxis dataKey="product" tick={{ fontSize: 10 }} angle={-45} textAnchor="end" height={80} />
               <YAxis tick={{ fontSize: 11 }} />
               <Tooltip />
               <Bar dataKey="count" fill="#8B5CF6" radius={[4, 4, 0, 0]}>
