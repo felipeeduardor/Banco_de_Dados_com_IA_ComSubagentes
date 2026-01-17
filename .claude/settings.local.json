@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir /s /b \"C:\\\\Users\\\\nelzi\\\\Downloads\\\\hotmart-aula-subagentes\\\\frontend\\\\src\\\\*.ts\" \"C:\\\\Users\\\\nelzi\\\\Downloads\\\\hotmart-aula-subagentes\\\\frontend\\\\src\\\\*.tsx\")",
+      "Bash(dir:*)",
+      "Bash(npm install:*)",
+      "Bash(npm test:*)",
+      "Bash(npx vitest:*)"
+    ]
+  }
+}
